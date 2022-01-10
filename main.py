@@ -2,7 +2,6 @@ from PIL import Image
 
 image = Image.open("monro.jpg")
 rgb_image = image.convert("RGB")
-print(rgb_image.mode)  # Вернуло CMYK, значит канала 4
 red, green, blue = rgb_image.split()
 
 coordinates = (100, 0, image.width, image.height) #  Красная
